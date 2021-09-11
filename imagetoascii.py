@@ -3,7 +3,7 @@ from PIL import Image
 ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
 
 # resizing image
-def resize_image(image, new_width=100):
+def resize_image(image, new_width=50):
     width, height = image.size
     ratio = height/width
     new_height = int(new_width * ratio)
